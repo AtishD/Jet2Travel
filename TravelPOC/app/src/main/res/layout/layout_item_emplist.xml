@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/cardview_shadow_start_color"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:padding="@dimen/_5sdp" />
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivProfileImage"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_toEndOf="@id/ivProfileImage"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tvEmpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toEndOf="@id/ivProfileImage"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_18sdp" />
+
+        <TextView
+            android:id="@+id/tvEmpAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEmpName"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@id/ivProfileImage"
+            android:textColor="@color/colorBlack" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@android:drawable/ic_menu_delete" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

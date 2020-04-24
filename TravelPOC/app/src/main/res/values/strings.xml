@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Employee List</string>
+    <string name="retry">Reload</string>
+    <string name="sort_name">Sort\nName</string>
+    <string name="sort_age">Sort\nAge</string>
+    <string name="no_internet">No result found, Please check internet connectivity</string>
+</resources>
